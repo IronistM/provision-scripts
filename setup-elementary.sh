@@ -59,6 +59,12 @@ apm install highlight-selected minimap minimap-highlight-selected minimap-find-a
 apm install pigments
 
 
+# spotify client
+echo deb http://repository.spotify.com testing non-free | sudo tee /etc/apt/sources.list.d/spotify.list
+sudo apt-get update
+sudo apt-get install spotify-client
+
+
 # Get R (base) and a few dependencies for packages
 sudo apt-get -y install r-base libapparmor1 libcurl4-gnutls-dev libxml2-dev libssl-dev
 sudo su - -c "R -e \"install.packages('tidyverse', repos = 'http://cran.rstudio.com/')\""
