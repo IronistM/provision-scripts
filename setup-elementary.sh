@@ -70,6 +70,9 @@ echo deb http://repository.spotify.com testing non-free | sudo tee /etc/apt/sour
 sudo apt-get update
 sudo apt-get install spotify-client
 
+# Dropbox for elementary OS
+git clone https://github.com/zant95/elementary-dropbox /tmp/elementary-dropbox
+bash /tmp/elementary-dropbox/install.sh
 
 # Get R (base) and a few dependencies for packages
 sudo apt-get -y install r-base libapparmor1 libcurl4-gnutls-dev libxml2-dev libssl-dev
@@ -86,7 +89,7 @@ sudo gdebi rstudio-latest-amd64.deb
 # Python's turn..
 sudo apt-get -y install fastqc python-stdeb python-pip python-devcd
 sudo apt-get -y install build-essentials
-sudo pip install --upgrade pip
+sudo pip install --upgrade pip # if needed let's update it
 sudo pip install psutil
 sudo pip install configobj
 sudo apt-add-repository ppa:neufeldlab/ppa && sudo apt-get update && sudo apt-get -y install pandaseq
