@@ -11,12 +11,12 @@ sudo apt install -y \
   php php-curl php-mysql \
   docker.io \
   git \
-  nodejs npm 
+  nodejs npm
 sudo ln -s /usr/bin/nodejs /usr/bin/node
 sudo npm install -g bower electron
 wget https://getcomposer.org/installer
 php installer
-rm installer 
+rm installer
 sudo mv composer.phar /usr/bin/composer
 sudo gpasswd -a $USER docker
 sudo service docker restart
@@ -43,6 +43,12 @@ sudo apt install libreoffice-gtk2 libreoffice-gnome
 sudo add-apt-repository ppa:webupd8team/java
 sudo apt-get update
 sudo apt install oracle-java8-installer
+
+# latex
+sudo apt install texlive-latex-base
+
+# pandoc
+sudo apt install pandoc
 
 # vlc
 sudo apt install -y vlc
