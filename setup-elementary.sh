@@ -52,6 +52,11 @@ sudo apt install pandoc
 # vlc
 sudo apt install -y vlc
 
+# skype
+wget https://repo.skype.com/latest/skypeforlinux-64.deb
+sudo gdebi skypeforlinux-64.deb
+rm skypeforlinux-64.deb
+
 # atom
 sudo add-apt-repository ppa:webupd8team/atom
 sudo apt update && sudo apt install atom
@@ -62,7 +67,6 @@ apm install indent-guide-improved
 apm install git-plus
 apm install highlight-selected minimap minimap-highlight-selected minimap-find-and-replace
 apm install pigments
-
 
 # spotify client
 echo deb http://repository.spotify.com testing non-free | sudo tee /etc/apt/sources.list.d/spotify.list
