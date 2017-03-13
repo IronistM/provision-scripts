@@ -21,7 +21,6 @@ sudo mv composer.phar /usr/bin/composer
 sudo gpasswd -a $USER docker
 sudo service docker restart
 sudo docker pull postgres # Get most used open source DB
-sudo docker pull redash/redash # Get latest re:dash docker
 
 # add-apt-repository
 sudo apt-get install software-properties-common python-software-properties
