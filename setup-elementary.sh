@@ -73,6 +73,10 @@ sudo apt-get install spotify-client
 git clone https://github.com/zant95/elementary-dropbox /tmp/elementary-dropbox
 bash /tmp/elementary-dropbox/install.sh
 
+# Apache Drill
+wget http://apache.mirrors.hoobly.com/drill/drill-1.9.0/apache-drill-1.9.0.tar.gz | tar xzf -
+rm apache-drill-1.9.0.tar.gz
+
 # Get R (base) and a few dependencies for packages
 sudo apt-get -y install r-base libapparmor1 libcurl4-gnutls-dev libxml2-dev libssl-dev
 sudo su - -c "R -e \"install.packages('tidyverse', repos = 'http://cran.rstudio.com/')\""
