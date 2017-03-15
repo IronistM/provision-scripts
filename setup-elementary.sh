@@ -68,6 +68,10 @@ apm install git-plus
 apm install highlight-selected minimap minimap-highlight-selected minimap-find-and-replace
 apm install pigments
 
+# google cloud SDK
+wget https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-146.0.0-linux-x86_64.tar.gz | tar xzf -
+./google-cloud-sdk/install.sh
+
 # spotify client
 echo deb http://repository.spotify.com testing non-free | sudo tee /etc/apt/sources.list.d/spotify.list
 sudo apt-get update
