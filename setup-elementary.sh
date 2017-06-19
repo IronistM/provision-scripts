@@ -93,8 +93,10 @@ sudo apt-get -y install r-base libapparmor1 libcurl4-gnutls-dev libxml2-dev libs
 sudo su - -c "R -e \"install.packages('tidyverse', repos = 'http://cran.rstudio.com/')\""
 sudo su - -c "R -e \"install.packages('devtools', repos='http://cran.rstudio.com/')\""
 sudo su - -c "R -e \"devtools::install_github('daattali/shinyjs')\""
+sudo su - -c "R -e \"devtools::install_github('rstats-db/bigrquery')\""
 sudo su - -c "R -e \"install.packages('rmarkdown', repos='http://cran.rstudio.com/')\""
 sudo su - -c "R -e \"install.packages('RCurl', repos='http://cran.rstudio.com/')\""
+sudo su - -c "R -e \"install.packages(c('googleAuthR', 'shinyFiles', 'googleCloudStorageR', 'bigQueryR', 'gmailr', 'googleAnalyticsR'), repos='http://cran.rstudio.com/')\""
 
 # Get R-Studio
 sudo apt-get install gdebi-core
