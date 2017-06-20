@@ -46,9 +46,3 @@ vm.gce <- gce_ssh_setup(vm.gce,
 
 # Add users to RStudio VM
 gce_rstudio_adduser(vm.rstudio, username = "manosp", password = "m@nosp")
-gce_rstudio_adduser(vm.rstudio, username = "thomas", password = "thom@s")
-gce_rstudio_adduser(vm.rstudio, username = "dion", password = "di0n")
-gce_rstudio_adduser(vm.rstudio, username = "george", password = "ge0rg3")
-gce_rstudio_adduser(vm.rstudio, username = "alex", password = "al3x")
-
-
