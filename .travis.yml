@@ -1,0 +1,10 @@
+#whitelist branches
+branches:
+  only:
+    - master
+
+language: bash
+sudo: true
+
+script:
+    - bash setup-elementary.sh
