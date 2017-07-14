@@ -1,4 +1,4 @@
-#whitelist branches
+#whitelist branches.
 branches:
   only:
     - master
