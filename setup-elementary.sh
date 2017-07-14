@@ -22,7 +22,6 @@ sudo npm install n -g
 sudo n latest
 sudo gpasswd -a $USER docker
 sudo service docker restart
-sudo docker pull postgres # Get most used open source DB
 
 
 # add-apt-repository
@@ -81,8 +80,8 @@ sudo apt-get update
 sudo apt-get install spotify-client
 
 # Dropbox for elementary OS
-git clone https://github.com/zant95/elementary-dropbox /tmp/elementary-dropbox
-bash /tmp/elementary-dropbox/install.sh
+# git clone https://github.com/zant95/elementary-dropbox /tmp/elementary-dropbox
+# bash /tmp/elementary-dropbox/install.sh
 
 # Apache Drill
 wget http://apache.mirrors.hoobly.com/drill/drill-1.9.0/apache-drill-1.9.0.tar.gz | tar xzf -
@@ -115,11 +114,11 @@ sudo apt-add-repository ppa:neufeldlab/ppa && sudo apt-get update && sudo apt-ge
 curl -L https://raw.githubusercontent.com/kamranahmedse/git-standup/master/installer.sh | sudo sh
 
 # remove elementary softwares
-sudo apt purge epiphany-browser epiphany-browser-data
-sudo apt purge midori-granite
-sudo apt purge noise
-sudo apt purge bluez
-sudo apt purge modemmanager
-sudo apt purge geary
+#sudo apt purge epiphany-browser epiphany-browser-data
+#sudo apt purge midori-granite
+#sudo apt purge noise
+#sudo apt purge bluez
+#sudo apt purge modemmanager
+#sudo apt purge geary
 sudo apt autoremove
 sudo apt autoclean
