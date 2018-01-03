@@ -88,6 +88,12 @@ wget http://apache.mirrors.hoobly.com/drill/drill-1.9.0/apache-drill-1.9.0.tar.g
 rm apache-drill-1.9.0.tar.gz
 
 # Get R (base) and a few dependencies for packages
+sudo apt-get -qq update
+sudo apt-get install -y libjpeg62
+sudo apt-get -y install libgstreamer0.10-0
+sudo apt-get -y install libgstreamer-plugins-base0.10-0
+# Ubuntu 12.04 doesn't include libjpeg62 (and it's required by Qt 4.8)
+sudo apt-get -y install libjpeg62
 sudo add-apt-repository "deb http://cran.rstudio.com/bin/linux/ubuntu $(lsb_release -sc)/"
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
 sudo add-apt-repository -y ppa:marutter/rdev
@@ -114,7 +120,7 @@ sudo apt-get -y install build-essentials
 sudo pip install --upgrade pip # if needed let's update it
 sudo pip install psutil
 sudo pip install configobj
-sudo apt-add-repository ppa:neufeldlab/ppa && sudo apt-get update && sudo apt-get -y install pandaseq
+sudo apt-add-repository -y ppa:neufeldlab/ppa && sudo apt-get update && sudo apt-get -y install pandaseq
 
 # Get git-standup
 curl -L https://raw.githubusercontent.com/kamranahmedse/git-standup/master/installer.sh | sudo sh
