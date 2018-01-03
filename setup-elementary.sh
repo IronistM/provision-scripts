@@ -88,6 +88,12 @@ wget http://apache.mirrors.hoobly.com/drill/drill-1.9.0/apache-drill-1.9.0.tar.g
 rm apache-drill-1.9.0.tar.gz
 
 # Get R (base) and a few dependencies for packages
+sudo add-apt-repository "deb http://cran.rstudio.com/bin/linux/ubuntu $(lsb_release -sc)/"
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
+sudo add-apt-repository -y ppa:marutter/rdev
+sudo apt-get -y update
+sudo apt-get -y upgrade
+sudo apt-get -y install r-base
 sudo apt-get -y install r-base libapparmor1 libcurl4-gnutls-dev libxml2-dev libssl-dev
 sudo su - -c "R -e \"install.packages('tidyverse', repos = 'http://cran.rstudio.com/')\""
 sudo su - -c "R -e \"install.packages('devtools', repos='http://cran.rstudio.com/')\""
