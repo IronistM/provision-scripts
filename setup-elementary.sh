@@ -60,8 +60,8 @@ sudo gdebi skypeforlinux-64.deb
 rm skypeforlinux-64.deb
 
 # atom
-sudo add-apt-repository ppa:webupd8team/atom
-sudo apt update && sudo apt install atom
+sudo add-apt-repository -y ppa:webupd8team/atom
+sudo apt update && sudo apt install -y atom
 # install add-ins with apm
 apm install file-icons
 apm install atom-beautify
