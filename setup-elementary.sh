@@ -100,7 +100,7 @@ sudo su - -c "R -e \"install.packages(c('googleAuthR', 'shinyFiles', 'googleClou
 # Get R-Studio
 sudo apt-get install gdebi-core
 wget https://www.rstudio.org/download/latest/daily/desktop/ubuntu64/rstudio-latest-amd64.deb # latest as now()!
-sudo gdebi rstudio-latest-amd64.deb
+sudo dpkg -i rstudio-latest-amd64.deb
 
 # Python's turn..
 sudo apt-get -y install fastqc python-stdeb python-pip python-devcd
