@@ -36,14 +36,14 @@ sudo apt install software-properties-gtk
 sudo apt install ubuntu-restricted-extras
 
 # libreoffice
-sudo add-apt-repository ppa:libreoffice/ppa
+sudo add-apt-repository -υ ppa:libreoffice/ppa
 sudo apt update
-sudo apt install libreoffice-gtk2 libreoffice-gnome
+sudo apt install -υ libreoffice-gtk2 libreoffice-gnome
 
 # java
-sudo add-apt-repository ppa:webupd8team/java
+sudo add-apt-repository -υ ppa:webupd8team/java
 sudo apt-get update
-sudo apt install oracle-java8-installer
+sudo apt install -υ oracle-java8-installer
 
 # latex
 sudo apt install texlive-latex-base
